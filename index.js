@@ -276,11 +276,4 @@ window.onload = function() {
   }
 
     
-    $('button.chat_input_send'').click(function(){
-  var btn = $(this);
-  btn.prop('disabled', true);
-  setTimeout(function(){
-    btn.prop('disabled', false);
-  },15000);
-});
-}
+
