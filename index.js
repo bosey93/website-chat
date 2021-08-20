@@ -34,7 +34,7 @@ window.onload = function() {
 
       var title = document.createElement('h1')
       title.setAttribute('id', 'title')
-      title.textContent = 'Online Chat'
+      title.textContent = 'MemeChat 2.0'
 
       title_inner_container.append(title)
       title_container.append(title_inner_container)
@@ -54,7 +54,7 @@ window.onload = function() {
 
       var join_button = document.createElement('button')
       join_button.setAttribute('id', 'join_button')
-      join_button.innerHTML = 'Rejoindre <i class="fas fa-sign-in-alt"></i>'
+      join_button.innerHTML = 'Join <i class="fas fa-sign-in-alt"></i>'
 
       var join_input_container = document.createElement('div')
       join_input_container.setAttribute('id', 'join_input_container')
@@ -62,7 +62,7 @@ window.onload = function() {
       var join_input = document.createElement('input')
       join_input.setAttribute('id', 'join_input')
       join_input.setAttribute('maxlength', 15)
-      join_input.placeholder = 'Veuiller entrer votre pseudo.'
+      join_input.placeholder = 'Veuillez entrer un pseudo.'
       join_input.onkeyup  = function(){
         if(join_input.value.length > 0){
           join_button.classList.add('enabled')
@@ -123,7 +123,7 @@ window.onload = function() {
       chat_input_send.setAttribute('disabled', true)
       chat_input_send.innerHTML = `<i class="far fa-paper-plane"></i>`
 
-       var chat_input = document.createElement('input')
+      var chat_input = document.createElement('input')
       chat_input.setAttribute('id', 'chat_input')
       chat_input.setAttribute('maxlength', 1000)
       chat_input.placeholder = `${localStorage.getItem('name')}. Bienvenue sur le chat...`
@@ -263,8 +263,6 @@ window.onload = function() {
       })
     }
   }
-  
-  
 
   app = new MEME_CHAT()
   // if this is a new user then take them to the home screen
@@ -275,5 +273,4 @@ window.onload = function() {
     app.chat()
   }
 
-    
-
+}
