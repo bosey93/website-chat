@@ -95,3 +95,127 @@
         font-size: 20px;
     }
 </style>
+
+
+            <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <style>
+
+    .overlay {
+
+      position: absolute;
+
+      z-index: 99;
+
+      top: 0; left: 0; bottom: 0; right: 0;
+
+      background-color: rgba(0, 0, 0, 0.5);
+
+      display: none;
+
+    }
+
+    .popup {
+
+      background-color: #fff;
+
+      width: 380px;
+
+      height: 200px;
+
+      position: absolute;
+
+      left: calc(50% - 190px);
+
+      top: calc(50% - 110px);
+
+      z-index: 999;
+
+      border-radius: 10px;
+
+      box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+
+      box-sizing: border-box;
+
+      border: thin solid #ccc;
+
+      padding: 1rem;
+
+      display: none;
+
+    }
+
+    .popup .popup-text{
+      font-size: 13px;
+    }
+
+    .popup .popup-title { font-size: 25px }
+
+    .popup .popup-close {
+
+      color: #f00;
+
+      text-decoration: none;
+
+      font-size: 1.6em;
+
+      position: absolute;
+
+      top: 4px;
+    right: 8px;
+
+      line-height: 1em;
+
+      text-shadow: 0 3px 3px #ccc;
+
+    }
+
+  </style>
+
+</head>
+
+<body  PopUp();>
+
+
+
+<br>
+
+<div class="overlay"></div>
+
+<div class="popup">
+
+  <div class="popup-title">Mise à jour du site</div>
+
+  <p class="popup-text">Une mise à jour est arrivé ! <br>
+  Mise a jour du design : Le design du site est terminé. <br>
+  Mise a jour du système : Tous les bugs ont été corrigé. <br>Bienvenue sur Bos-Chat ! Amusez-vous bien.</p>
+
+  <a href="#" class="popup-close" title="Fermer la popup">✖</a>
+
+</div>
+
+
+
+<script>
+
+  function  PopUp() {
+
+      $('.popup').fadeIn();
+
+      $('.overlay').fadeIn();
+
+    }
+
+    function cliquerSurCroix () {
+
+        $('.popup').fadeOut();
+
+        $('.overlay').fadeOut();
+
+    }
+
+$('input').on('click',  PopUp());
+
+$('.popup-close').on('click', cliquerSurCroix);
+
+</script>
