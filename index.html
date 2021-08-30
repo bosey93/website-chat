@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> RealChat Online</title>
-    <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'/>
-    <link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'/>
-    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'/>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+<html>
+<head>
+    <title>Design</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="index.css"/>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-11" style="
+    width: 550px;
+    HEIGHT: 300px;">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-comment"></span> Chat                      
+                    </div>
+                    <div class="panel-body">
+                        <ul class="chat">
 
-    <script type="text/javascript" src="index.js"></script>
-  </head>
-  <body></body>
+                        	
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input id="btn-input" type="text" class="form-control input-sm" placeholder="Ecrire un message..." />
+                            <span class="input-group-btn">
+                                <button class="btn btn-warning btn-sm send-button" id="btn-chat">
+                                    Send</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- firebase js -->
+    <script  src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.13.2/firebase-storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+</body>
 </html>
