@@ -13,6 +13,7 @@ Body
 html,
 body {
   height: 100%;
+
 }
 
 body {
@@ -469,3 +470,5 @@ Bounce
             transform: translateY(-10px);
   }
 }
+
+ 
