@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-
 window.onload = function() {
     // Your web app's Firebase configuration
    var firebaseConfig = {
@@ -979,4 +973,4 @@ $('#btn-input').keyup(function(event) {
     }
     // console.log("Key pressed");
 })
->>>>>>> f0cff4531293364cf4fcf0b95a8d2ffeff72e01f
+
